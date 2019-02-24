@@ -2,8 +2,8 @@ package robotname
 
 import (
 	"crypto/rand"
-	"math/big"
 	"errors"
+	"math/big"
 )
 
 type Robot struct {
@@ -63,7 +63,6 @@ func randIntn(i int) int {
 	rndm, _ := rand.Int(rand.Reader, bigi)
 	return int(rndm.Int64())
 }
-
 
 func intToMultiBaseString(id int, digitSpec []string) string {
 	var pos, rmndr, minVal int
@@ -128,4 +127,3 @@ func (r *Robot) Name() (string, error) {
 func (r *Robot) Reset() {
 	*r = Robot{}
 }
-

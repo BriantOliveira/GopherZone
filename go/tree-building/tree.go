@@ -57,4 +57,3 @@ func Make(records []Record) (*Node, error) {
 	}
 	return &nodes[0], nil
 }
-

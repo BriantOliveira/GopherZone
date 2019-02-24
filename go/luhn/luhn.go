@@ -3,12 +3,12 @@ package luhn
 import "unicode"
 
 // Check if a credit card is valid
-func Valid(input string) bool{
+func Valid(input string) bool {
 	readCard := false
 	var allValues []int
 
 	renes := []rune(input)
-	for i := len(runes) -1; i >= 0; i-- {
+	for i := len(runes) - 1; i >= 0; i-- {
 		char := runes[i]
 
 		if string(char) == " " {
